@@ -1,3 +1,20 @@
-.header{
+.header {
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: #1b1b1bd7;
+  min-height: 100px;
+  border-radius: 12px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logoContainer {
+  
+  }
+
+  .menuContainer {
     
+  }
 }
+

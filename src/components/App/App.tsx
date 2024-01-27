@@ -1,14 +1,12 @@
-import styles from "./App.module.css"
 import Layout from '../../layouts/Layout'
+import { Route, Routes } from "react-router-dom"
 
 function App() {
 
   return (
-   <div className={styles.app}>
-    <Layout>
-
-    </Layout>
-   </div>
+    <Routes>
+    <Route path="/" element={<Layout/>}/>
+   </Routes>
   )
 }
 

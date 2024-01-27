@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -9,8 +10,8 @@ const Header = () => {
       <div className={styles.menuContainer}>
       <input className={styles.search} type="text" placeholder='Поиск...'/>
         <nav className={styles.menu}>
-          <div className={styles.menu__item}>Вход</div>
-          <div className={styles.menu__item}>Регистрация</div>
+          <Link className={styles.menu__item} to='/'>Вход</Link>
+          <Link className={styles.menu__item} to='/'>Регистрация</Link>
         </nav>
       </div>
     </header>

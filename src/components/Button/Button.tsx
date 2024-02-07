@@ -1,3 +1,4 @@
+import React from 'react';
 import { FC } from "react";
 import styles from "./Button.module.scss";
 
@@ -8,7 +9,6 @@ interface IButton {
   height: number;
   backgroundColor?:string,
   color?:string,
-  theme?: string;
 }
 
 const Button: FC<IButton> = ({
@@ -18,7 +18,6 @@ const Button: FC<IButton> = ({
   height,
   backgroundColor,
   color,
-  theme,
 }) => {
   return (
     <button

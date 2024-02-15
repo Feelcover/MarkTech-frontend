@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "../Logo/Logo";
+import HeaderItem from "../HeaderItem/HeaderItem";
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
         <p className={styles.header__contact__text}>Заказать звонок</p>
         </div>
         <ul className={styles.header__bar}>
-          
+          <HeaderItem backgroundImage="url(/images/HeaderHeart.svg)"/>
+          <HeaderItem backgroundImage="url(/images/HeaderLK.svg)"/>
+          <HeaderItem backgroundImage="url(/images/HeaderCart.svg)"/>
         </ul>
         </div>
         <div className={styles.header__basket}>

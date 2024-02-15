@@ -1,12 +1,8 @@
-import React from 'react'
-import styles from './HeaderItem.module.scss'
+import React from "react";
+import styles from "./HeaderItem.module.scss";
 
-const HeaderItem = () => {
-  return (
-    <li className={styles.headerItem}>
+const HeaderItem = ({ backgroundImage }: { backgroundImage: string }) => {
+  return <li className={styles.headerItem} style={{ backgroundImage }} />;
+};
 
-    </li>
-  )
-}
-
-export default HeaderItem
+export default HeaderItem;

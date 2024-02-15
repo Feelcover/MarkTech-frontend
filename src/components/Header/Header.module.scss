@@ -67,12 +67,16 @@
       line-height: 16px;
       text-align: left;
       text-decoration-line: underline;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.9;
+      }
     }
   }
 
   &__bar{
     display: flex;
-    
+    margin: 0 40px 0 150px;
   }
 
   &__basket {

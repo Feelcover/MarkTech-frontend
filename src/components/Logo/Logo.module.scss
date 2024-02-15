@@ -1,0 +1,10 @@
+@import "../../styles/variables/colors.scss";
+.logo {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  .orange {
+    color: $orange;
+  }
+}

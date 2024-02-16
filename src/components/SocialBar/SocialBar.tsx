@@ -5,16 +5,16 @@ const SocialBar = () => {
     <ul className={styles.socialBar}>
       <li
         className={styles.socialBar__item}
-        style={{ backgroundImage: "url(/public/images/inst.svg)" }}
+        style={{ backgroundImage: "url(/images/inst.svg)" }}
       />
       <li
         className={styles.socialBar__item}
-        style={{ backgroundImage: "url(/public/images/vk.svg)" }}
+        style={{ backgroundImage: "url(/images/vk.svg)" }}
       />
       <li
         className={styles.socialBar__item}
         style={{
-          backgroundImage: "url(/public/images/tg.svg)",
+          backgroundImage: "url(/images/tg.svg)",
           backgroundPosition: "8px 1px",
         }}
       />

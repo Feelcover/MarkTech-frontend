@@ -1,0 +1,29 @@
+@import "../../styles/variables/colors.scss";
+
+.socialBar {
+  max-width: 137px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__item {
+    width: 37.5px;
+    height: 36px;
+    border-radius: 500px;
+    background: $white;
+    margin-right: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
+    cursor: pointer;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        transform: scale(1.1);
+    opacity: 1;
+
+    }
+  }
+}

@@ -1,19 +1,83 @@
 @import "../../styles/variables/colors.scss";
 
-.navBar {
+.wrapper {
   width: 100%;
-  min-height: 88px;
   background-color: $black;
-  padding: 0 200px;
+}
+.navBar {
+  min-height: 88px;
+  padding: 0 310px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media screen and (max-width: 1870px) {
+    padding: 0 200px;
+  }
+  @media screen and (max-width: 1650px) {
+    padding: 0 100px;
+  }
+
+  .rightContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 67px;
+    max-width: 932px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 672px;
+    display: flex;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 484px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 51px;
+
+    &__item {
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $white;
+        transition: width 0.2s ease-in-out;
+        z-index: 0;
+        opacity: 0.9;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+      &:active {
+        color: $orange;
+      }
+    }
+  }
 
   &__catalog {
     padding-left: 55px;
-    width: 200px;
     height: 48px;
     box-sizing: border-box;
-    
+    width: 200px;
     border-radius: 5px;
     color: $white;
     font-size: 16px;
@@ -28,14 +92,19 @@
     background-position: 16px 15px;
     cursor: pointer;
     border: 1px solid $backgroundWhite;
-
-    
     transition: all 0.4s ease-in-out;
-    &:hover{
-        opacity: 0.8;
-    border: 1px solid $orange;
+    &:hover {
+      opacity: 0.8;
+      border: 1px solid $orange;
+    }
 
-
+    &__text {
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      width: 129px;
     }
   }
 }

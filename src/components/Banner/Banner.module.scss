@@ -1,0 +1,71 @@
+@import "../../styles/variables/colors.scss";
+
+.banner {
+  min-height: 528px;
+  width: 100%;
+  background-color: $black;
+
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 310px;
+    @media screen and (max-width: 1870px) {
+      padding: 0 200px;
+    }
+    @media screen and (max-width: 1650px) {
+      padding: 0 100px;
+    }
+  }
+
+  &__start {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 640px;
+    height: 488px;
+    background-image: url("/public/images/iphone.png");
+    background-size: cover;
+    background-position: -239px 0;
+    background-repeat: no-repeat;
+  }
+  &__mid {
+    width: 311px;
+    height: 488px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    background-image: url("/public/images/max.jpg");
+    background-size: cover;
+    background-position: -277px 0;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__endUp {
+    width: 310px;
+    height: 234px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    background-image: url("/public/images/dyson.jpeg");
+    background-size: cover;
+    background-position: 43px 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  &__endDown {
+    width: 310px;
+    height: 234px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    background-image: url("/public/images/alice.jpg");
+    background-size: cover;
+    background-position: 102px 0;
+    background-repeat: no-repeat;
+  }
+}

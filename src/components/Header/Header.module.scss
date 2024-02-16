@@ -2,18 +2,26 @@
 
 .header {
   width: 100%;
-  padding: 0 200px;
-  background-color: $backgroundBlack;
+  background-color: $black;
   min-height: 96px;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
 
   .wrapper {
+    border-bottom: 1px solid rgb(255,255,255, 0.2);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 310px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 1870px) {
+      padding: 0 200px;
+    }
+    @media screen and (max-width: 1650px) {
+      padding: 0 100px;
+    }
   }
 
   .container {
@@ -30,7 +38,7 @@
     justify-content: center;
 
     &__num {
-      color: rgb(255, 255, 255);
+      color: $white;
       font-size: 18px;
       font-weight: 600;
       line-height: 20px;
@@ -46,7 +54,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #fff;
+        background-color: $white;
         transition: width 0.2s ease-in-out;
         z-index: 0;
         opacity: 0.9;
@@ -68,13 +76,13 @@
       text-align: left;
       text-decoration-line: underline;
       cursor: pointer;
-      &:hover{
+      &:hover {
         opacity: 0.9;
       }
     }
   }
 
-  &__bar{
+  &__bar {
     display: flex;
     margin: 0 40px 0 150px;
   }
@@ -82,17 +90,17 @@
   &__basket {
     &__title {
       color: $white;
-      font-family: "Raleway";
       font-size: 16px;
       font-weight: 500;
       line-height: 20px;
       text-align: left;
       margin: 0;
+      width: 100%;
+      min-width: 149px;
     }
 
     &__price {
       color: $white;
-      font-family: "Raleway";
       font-size: 16px;
       font-weight: 700;
       line-height: 20px;

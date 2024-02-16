@@ -1,0 +1,26 @@
+@import "../../styles/variables/colors.scss";
+.wrapper {
+  .input {
+    box-sizing: border-box;
+    width: 310px;
+    height: 52px;
+    border-radius: 5px;
+    background: $white;
+    background-image: url("/images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 14px;
+    padding-left: 57px;
+    border: none;
+    opacity: 0.85;
+    transition: all 0.4s ease-in-out;
+    color: rgb(138, 138, 138);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    &:focus {
+      outline: none;
+      opacity: 1;
+    }
+  }
+}

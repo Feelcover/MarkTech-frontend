@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import React from "react";
 import Search from "../Search/Search";
 import SocialBar from "../SocialBar/SocialBar";
